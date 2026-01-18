@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: dbt_fake
+    description: Raw data tables for the practice project
+    database: dbt-practise-484418
+    schema: practise_set
+    
+    tables:
+      - name: companies_base
+        description: Database of companies with slogan, purpose, and date added
+      
+      - name: employees_base
+        description: Database of employees with company_id and demographic info
+      
+      - name: fake_personal_info
+        description: Additional employee information (phone, address, etc.)
+      
+      - name: enterprise_orders_base
+        description: Orders placed by employees
+      
+      - name: products_base
+        description: Products with name, price, category, and date added
